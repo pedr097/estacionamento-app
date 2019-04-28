@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Estacionamento
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="style">
+    
+    <h4>Lançamento de Ticket</h4><br>  
+    <ion-item> 
+      <ion-label class="fonte" position="floating">Cliente:</ion-label>
+      <ion-input [(ngModel)]="cliente"></ion-input>
+    </ion-item>
+    <ion-item> 
+      <ion-label class="fonte" position="floating">Descrição do veículo:</ion-label>
+      <ion-input [(ngModel)]="veiculo"></ion-input>
+    </ion-item>
+    <br>
+    <ion-button expand="block" (click)="addList()">Gerar Ticket</ion-button>
+    
+  </div>
+
+</ion-content>
